@@ -63,7 +63,7 @@ function hoverBoxes() {
 				shade += 0.2;
 			}	
 		});
-		box.addEventListener('touchmove', function(e) {
+		box.addEventListener('drag', function(e) {
 			box.style.backgroundColor = selectedColor;
 
 
