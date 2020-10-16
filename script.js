@@ -63,6 +63,7 @@ function hoverBoxes() {
 				shade += 0.2;
 			}	
 		});
+	}
 }
 
 
