@@ -62,8 +62,8 @@ function hoverBoxes() {
 				box.style.backgroundColor = box.style.backgroundColor.slice(0, -1) + "," + shade + ")";
 				shade += 0.2;
 			}	
-		});
-	}
+		})
+	});
 }
 
 
