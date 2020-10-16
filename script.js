@@ -62,6 +62,24 @@ function hoverBoxes() {
 				box.style.backgroundColor = box.style.backgroundColor.slice(0, -1) + "," + shade + ")";
 				shade += 0.2;
 			}	
+		});
+		box.addEventListener('touchmove', function(e) {
+			box.style.backgroundColor = selectedColor;
+
+
+			if (rainbow.checked) {
+				for (let i = 0; i < 3; i++)
+				{
+					colors[i] = Math.floor(Math.random() * 256); 
+				};
+				box.style.backgroundColor = "rgb(" + colors[0] + "," + colors[1] + "," + colors[2] + ")";
+			}
+			 if (shading.checked)
+			{
+				// box.style.backgroundColor = "rgba(56,56,56," + shade + ")";
+				box.style.backgroundColor = box.style.backgroundColor.slice(0, -1) + "," + shade + ")";
+				shade += 0.2;
+			}	
 		})
 	});
 }
