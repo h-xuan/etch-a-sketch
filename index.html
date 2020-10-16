@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>etch-a-sketch</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div id="wrapper">
+		<div id="header"><h1>etch-a-sketch</h1>
+			<p>a practice project by <a href="https://h-xuan.github.io/" target="_blank">xuan</a>. best viewed on desktop!</p></div>
+		<div id="create-div">
+			<form id="add-grid">
+			   <input type="text" placeholder="squares per side? (1 - 50)"/>
+			  <button>go!</button>
+			</form>
+
+		</div>
+
+		<div id="grid-div">
+		</div>
+
+		<div id="settings"> 
+
+			<div class="settings-opt">
+			 <input type="checkbox" id="rainbow">
+			 <label class="container">rainbow mode</label>
+			<span class="checkmark"></span></div>
+
+			 <div class="settings-opt">
+			 <input type="checkbox" id="shading">
+			 <label class="container">shading mode</label>
+			<span class="checkmark"></span></div>
+
+
+			 <div class="settings-opt">
+			  <button id="colorpicker" data-jscolor="{onInput:'update(this)', value:'#383838'}">
+				</button></div>
+			<!-- <input data-jscolor="{onInput:'update(this)', value:'#383838'}" id="colorpicker"> -->
+			
+		</div>
+	</div>
+
+<script src="script.js"></script>
+<script src="jscolor.js"></script>
+
+<script>
+jscolor.presets.default = {
+	format:'rgb', buttonColor:'rgba(255,255,255,1)'
+};
+</script>
+</body>
+</html>

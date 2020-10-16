@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	min-height: 100%;
+}
+
+body{
+	/*background-color: blue;*/
+	background-image: url('bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-position: right;*/
+}
+
+a{
+	text-decoration: none;
+	color: #aaa;
+}
+
+#wrapper {
+	padding: 30px 80px;
+	width: 500px;
+}
+
+#header {
+	font-family: 'Fredoka One', cursive;
+	color: #eee;
+	text-align: center;
+	width: 450px;
+}
+
+h1 { 
+	font-size: 3em; 
+}
+
+#header p {
+	font-size: 0.8em;
+}
+
+#create-div {
+	padding: 20px;
+	padding-top: 30px;
+	width: inherit;
+}
+
+
+#add-grid input {
+	padding: 8px;
+	background: #ccc;
+	font-family: 'Fredoka One', cursive;
+	color: #666;
+	width: 70%;
+	border-radius: 5px;
+}
+
+#add-grid button {
+	padding: 5px 10px;
+	margin-left: 5%;
+	border-radius: 5px;
+	border: none;
+	background-color: #eee;
+	font-family: 'Fredoka One', cursive;
+	font-size: 18px;
+	color: #2b2b2b;
+	outline: none;
+	transition: 0.1s ease-in-out;
+	cursor: pointer;
+	box-shadow: 1px 4px #777;
+}
+
+#add-grid button:hover{
+	transform: translateY(4px);
+	box-shadow: none;
+}
+
+.box {
+	/*background-color: rgba(255,255,255,0.9);*/
+	background-color: rgba(255,255,255,0.9);
+}
+/*.box:nth-child(even) {
+	background: green;
+}*/
+
+#grid-div {
+	width: 460px;
+	height: 460px;
+	display: grid;
+	box-sizing: content-box;
+	border: 1px solid #aaa;
+	margin: 0 auto;
+	background-color: rgba(255,255,255,0.9);
+}
+
+#settings {
+	width: inherit;
+	display: flex;
+	text-align: center;
+	/*background: salmon;*/
+}
+
+.settings-opt {
+	padding-top: 15px;
+	flex: 1 1 0;
+	font-family: 'Fredoka One', cursive;
+	color: #eee;
+}
+
+
+#colorpicker {
+	border: 3px solid #ccc;
+	border-radius: 10px;
+}
+
+.checkmark {
+	background-color: salmon;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+	body{
+		background-position: 50% 50%;
+		/*background-position: right;*/
+	}
+	#wrapper{
+		padding: 10px;
+		padding-top: 20px;
+	}
+}
